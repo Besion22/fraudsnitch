@@ -1,24 +1,16 @@
-import styles from "../assets/styles/navbar.module.css";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.logo}>
-        <a href="/">FraudWatch</a>
-      </div>
-      <ul className={styles.navLinks}>
+    <nav>
+      <ul>
         <li>
-          <a href="/">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a
-            href="/report
-          "
-          >
-            Report Fraud
-          </a>
+          <Link to="/report">Report Fraud</Link>
         </li>
         <li>
-          <a href="/educational">Learn About Fraud</a>
+          <Link to="/educational">Learn About Fraud</Link>
         </li>
       </ul>
     </nav>
