@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "homepage": "https://fraudsnitch.github.io/fraudsnitch",
+    "homepage": "https://besion22.github.io/fraudsnitch",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
