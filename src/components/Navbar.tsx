@@ -11,14 +11,14 @@ const Navbar = () => {
         </li>
         <li>
           <a
-            href="/fraudsnitch/report
+            href="/report
           "
           >
             Report Fraud
           </a>
         </li>
         <li>
-          <a href="/fraudsnitch/educational">Learn About Fraud</a>
+          <a href="/educational">Learn About Fraud</a>
         </li>
       </ul>
     </nav>
