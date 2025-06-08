@@ -1,9 +1,9 @@
 const Footer = () => {
   return (
     <div className="footer">
-      <h1 style={{ textAlign: "center", color: "red", fontSize: "20px" }}>
+      {/* <h1 style={{ textAlign: "center", color: "red", fontSize: "20px" }}>
         Footer
-      </h1>
+      </h1> */}
     </div>
   );
 };

@@ -1,8 +1,14 @@
+import HomeEducation from "../components/HomePage/HomeEducation";
+import HomeHero from "../components/HomePage/HomeHero";
+import HomeNewsroom from "../components/HomePage/HomeNewsRoom";
+
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <>
+      <HomeHero />
+      <HomeEducation />
+      <HomeNewsroom />
+    </>
   );
 };
 
