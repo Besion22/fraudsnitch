@@ -1,12 +1,12 @@
 import React from "react";
-import "../../assets/styles/homenewsroom.less"; // Dedicated LESS file
+import "../../assets/styles/homenewsroom.less";
 import { Link } from "react-router-dom";
 
 const newsArticles = [
   {
     type: "featured",
     image:
-      "https://via.placeholder.com/600x300/1a1a2e/6e78ff?text=FEATURED+NEWS", // Larger placeholder image
+      "https://via.placeholder.com/600x300/1a1a2e/6e78ff?text=FEATURED+NEWS",
     title: "ALERT: Sophisticated AI-Powered Voice Scams on the Rise",
     description:
       "Fraudsters are now using advanced AI to clone voices, mimicking family members or officials to trick victims. Learn how to differentiate real voices from AI-generated fakes and what steps to take if you receive such a call. This new threat requires heightened awareness and immediate action.",
