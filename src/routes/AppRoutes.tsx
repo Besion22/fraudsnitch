@@ -3,6 +3,7 @@ import Home from "../pages/Home";
 import Educational from "../pages/Educational";
 import Report from "../pages/Report";
 import MainLayout from "../layouts/MainLayout";
+import Newsroom from "../pages/Newsroom";
 const AppRoutes = () => {
   return (
     <Routes>
@@ -18,6 +19,10 @@ const AppRoutes = () => {
         <Route
           path="/report"
           element={<Report />}
+        />
+        <Route
+          path="/newsroom"
+          element={<Newsroom />}
         />
       </Route>
     </Routes>
