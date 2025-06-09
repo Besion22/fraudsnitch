@@ -1,12 +1,15 @@
 import React from "react";
 import "../../assets/styles/homenewsroom.less";
+import aifraud from "../../assets/images/aifraud.webp";
+import phishing from "../../assets/images/phishing.png";
+import cryptoscam from "../../assets/images/cryptoscam.jpg";
+import identitytheft from "../../assets/images/identitytheft.avif";
 import { Link } from "react-router-dom";
 
 const newsArticles = [
   {
     type: "featured",
-    image:
-      "https://via.placeholder.com/600x300/1a1a2e/6e78ff?text=FEATURED+NEWS",
+    image: aifraud,
     title: "ALERT: Sophisticated AI-Powered Voice Scams on the Rise",
     description:
       "Fraudsters are now using advanced AI to clone voices, mimicking family members or officials to trick victims. Learn how to differentiate real voices from AI-generated fakes and what steps to take if you receive such a call. This new threat requires heightened awareness and immediate action.",
@@ -15,7 +18,7 @@ const newsArticles = [
   },
   {
     type: "recent",
-    image: "https://via.placeholder.com/300x150/1a1a2e/aeaeae?text=Recent+1",
+    image: phishing,
     title: "New Phishing Wave Targets E-Commerce Shoppers",
     description:
       "Online shoppers are facing a surge in deceptive phishing emails designed to steal payment information during seasonal sales.",
@@ -24,7 +27,7 @@ const newsArticles = [
   },
   {
     type: "recent",
-    image: "https://via.placeholder.com/300x150/1a1a2e/aeaeae?text=Recent+2",
+    image: cryptoscam,
     title: "Cryptocurrency Investment Scams See Record Highs",
     description:
       "The allure of quick profits is leading many into fraudulent crypto schemes. Understand the red flags before investing.",
@@ -33,7 +36,7 @@ const newsArticles = [
   },
   {
     type: "recent",
-    image: "https://via.placeholder.com/300x150/1a1a2e/aeaeae?text=Recent+3",
+    image: identitytheft,
     title: "Identity Theft: Protecting Your Digital Footprint",
     description:
       "Practical tips on securing your personal data online to minimize the risk of identity theft in an increasingly digital world.",
@@ -116,10 +119,10 @@ const HomeNewsroom: React.FC = () => {
 
         <div className="newsroom-cta">
           <Link
-            to="/newsroom"
-            className="view-all-news-button"
+            to="/report"
+            className="viewall-button"
           >
-            View All News & Updates &rarr;
+            View All
           </Link>
         </div>
       </div>
