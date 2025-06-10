@@ -1,8 +1,10 @@
+import NewsroomMain from "../components/Newsroompage/NewsroomMain";
+
 const Newsroom = () => {
   return (
-    <div>
-      <h1>Newsroom</h1>
-    </div>
+    <>
+      <NewsroomMain />
+    </>
   );
 };
 

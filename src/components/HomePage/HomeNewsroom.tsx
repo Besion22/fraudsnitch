@@ -1,9 +1,9 @@
 import React from "react";
 import "../../assets/styles/homenewsroom.less";
-import aifraud from "../../assets/images/aifraud.webp";
-import phishing from "../../assets/images/phishing.png";
-import cryptoscam from "../../assets/images/cryptoscam.jpg";
-import identitytheft from "../../assets/images/identitytheft.avif";
+import aifraud from "../../assets/images/dataimages/aifraud.webp";
+import phishing from "../../assets/images/dataimages/phishing.png";
+import cryptoscam from "../../assets/images/dataimages/cryptoscam.jpg";
+import identitytheft from "../../assets/images/dataimages/identitytheft.avif";
 import { Link } from "react-router-dom";
 
 const newsArticles = [

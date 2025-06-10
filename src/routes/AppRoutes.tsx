@@ -5,6 +5,7 @@ import Report from "../pages/Report";
 import MainLayout from "../layouts/MainLayout";
 import Newsroom from "../pages/Newsroom";
 import TopicDetail from "../components/EducationPage/TopicDetail";
+import ArticleDetail from "../components/Newsroompage/ArticleDetail";
 const AppRoutes = () => {
   return (
     <Routes>
@@ -29,6 +30,10 @@ const AppRoutes = () => {
       <Route
         path="/education/:topicSlug"
         element={<TopicDetail />}
+      />
+      <Route
+        path="/newsroom/:articleSlug"
+        element={<ArticleDetail />}
       />
     </Routes>
   );
