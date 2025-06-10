@@ -1,0 +1,218 @@
+.education-page-section {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .page-title {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    line-height: 1.2;
+
+    @media (max-width: 768px) {
+      font-size: 38px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 30px;
+    }
+  }
+
+  .page-subtitle {
+    font-size: 18px;
+    text-align: center;
+    color: #aeaeae;
+    max-width: 800px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    margin: 0;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  .search-bar-container {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 40px;
+
+    .search-input {
+      flex-grow: 1;
+      padding: 15px 20px;
+      border: 1px solid #2a2a4a;
+      border-radius: 8px;
+      background-color: #1a1a2e;
+      color: #fff;
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.3s ease;
+
+      &:focus {
+        border-color: #5860bd;
+      }
+
+      &::placeholder {
+        color: #777;
+      }
+    }
+
+    .search-button {
+      padding: 15px 25px;
+      background-color: #5860bd;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #6e78ff;
+      }
+    }
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      .search-button {
+        width: 100%;
+      }
+    }
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+  }
+
+  .education-card {
+    background: #1a1a2e;
+    border: 1px solid #2a2a4a;
+    border-radius: 12px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease,
+      border-color 0.3s ease;
+    height: 100%;
+
+    &:hover {
+      transform: translateY(-10px);
+      border-color: #5860bd;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-icon {
+      font-size: 48px;
+      line-height: 1;
+      color: #6e78ff;
+      margin-bottom: 25px;
+    }
+
+    .card-title {
+      font-size: 24px;
+      font-weight: 600;
+      color: #fff;
+      margin: 0 0 15px 0;
+    }
+
+    .card-description {
+      font-size: 16px;
+      color: #aeaeae;
+      line-height: 1.6;
+      flex-grow: 1;
+      margin-bottom: 30px;
+    }
+
+    .card-link {
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      background-color: transparent;
+      border: 2px solid #5860bd;
+      padding: 12px 25px;
+      border-radius: 50px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: #5860bd;
+        color: #fff;
+      }
+    }
+  }
+
+  .call-to-action {
+    background-color: #1a1a2e;
+    border: 1px solid #2a2a4a;
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    margin-top: 60px;
+    width: 100%;
+    max-width: 800px;
+
+    h3 {
+      font-size: 28px;
+      color: #fff;
+      margin-bottom: 15px;
+
+      @media (max-width: 768px) {
+        font-size: 24px;
+      }
+    }
+
+    p {
+      font-size: 17px;
+      color: #aeaeae;
+      line-height: 1.6;
+      margin-bottom: 30px;
+
+      @media (max-width: 768px) {
+        font-size: 15px;
+      }
+    }
+
+    .contact-link {
+      display: inline-block;
+      background-color: #6e78ff;
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        background-color: #5860bd;
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 60px 20px;
+    .container {
+      gap: 40px;
+    }
+  }
+}

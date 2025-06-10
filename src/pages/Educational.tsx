@@ -1,8 +1,10 @@
+import EducationMain from "../components/EducationPage/EducationMain";
+
 const Educational = () => {
   return (
-    <div>
-      <h1>Educational</h1>
-    </div>
+    <>
+      <EducationMain />
+    </>
   );
 };
 
