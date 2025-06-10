@@ -1,8 +1,10 @@
+import FraudReportForm from "../components/ReportPage/FraudReportForm";
+
 const Report = () => {
   return (
-    <div>
-      <h1>Report</h1>
-    </div>
+    <>
+      <FraudReportForm />
+    </>
   );
 };
 

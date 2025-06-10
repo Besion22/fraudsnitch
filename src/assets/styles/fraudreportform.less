@@ -1,0 +1,149 @@
+@primary-color: rgb(88, 96, 189);
+@text-color-light: #fff;
+@text-color-dark: #2b2b2b;
+@form-background: #161513;
+@border-color: #8b8b8b;
+
+.formContainer {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: @form-background;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(151, 151, 151, 0.1);
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .formHeader {
+    h1 {
+      color: @primary-color;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+    p {
+      margin-bottom: 2rem;
+      color: #666;
+      font-size: 1.1rem;
+    }
+  }
+
+  .formSection {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid @border-color;
+    padding-bottom: 2rem;
+
+    &:last-of-type {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: @primary-color;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .formGroup {
+    margin-bottom: 1.5rem;
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+
+      .optional {
+        font-weight: 400;
+        color: #777;
+      }
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid @border-color;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: inherit;
+      background-color: @text-color-dark;
+      color: @text-color-light;
+
+      box-sizing: border-box;
+      transition: border-color 0.3s, box-shadow 0.3s;
+
+      &::placeholder {
+        color: lighten(@text-color-light, 30%);
+      }
+
+      &:focus {
+        outline: none;
+        border-color: @primary-color;
+        box-shadow: 0 0 0 3px fade(@primary-color, 20%);
+      }
+    }
+
+    textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+  }
+
+  .fileUploadWrapper {
+    border: 2px dashed @border-color;
+    border-radius: 6px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.3s, background-color 0.3s;
+
+    &:hover {
+      border-color: @primary-color;
+      background-color: #303030;
+    }
+
+    .fileUploadText {
+      color: #666;
+      span {
+        color: @primary-color;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .fileName {
+    margin-top: 1rem;
+    font-weight: 500;
+    color: #555;
+    word-break: break-all;
+  }
+
+  .submitBtn {
+    display: inline-block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: @text-color-light;
+    background-color: @primary-color;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+
+    &:hover {
+      background-color: darken(@primary-color, 5%);
+      transform: translateY(-2px);
+    }
+  }
+}
