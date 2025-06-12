@@ -54,6 +54,13 @@ const Navbar = () => {
           Newsroom
         </NavLink>
         <NavLink
+          to="/watchtower"
+          className={({ isActive }) => `link ${isActive ? "active" : ""}`}
+          onClick={() => setMenuOpen(false)}
+        >
+          Watchtower
+        </NavLink>
+        <NavLink
           to="/report"
           className={({ isActive }) => `link ${isActive ? "active" : ""}`}
           onClick={() => setMenuOpen(false)}

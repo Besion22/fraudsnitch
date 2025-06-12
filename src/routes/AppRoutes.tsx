@@ -6,6 +6,7 @@ import MainLayout from "../layouts/MainLayout";
 import Newsroom from "../pages/Newsroom";
 import TopicDetail from "../components/EducationPage/TopicDetail";
 import ArticleDetail from "../components/Newsroompage/ArticleDetail";
+import Watchtower from "../pages/Watchtower";
 const AppRoutes = () => {
   return (
     <Routes>
@@ -25,6 +26,10 @@ const AppRoutes = () => {
         <Route
           path="/newsroom"
           element={<Newsroom />}
+        />
+        <Route
+          path="/watchtower"
+          element={<Watchtower />}
         />
       </Route>
       <Route

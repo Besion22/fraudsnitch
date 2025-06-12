@@ -1,0 +1,168 @@
+// src/assets/styles/footer.less
+
+.footer {
+  background-color: rgb(88, 96, 189); // Main navbar blue
+  color: #fff; // White text
+  padding: 3rem 2rem; // Generous padding
+  border-top-left-radius: 10px; // Match navbar border-radius
+  border-top-right-radius: 10px; // Match navbar border-radius
+  font-family: "Inter", sans-serif; // Consistent font
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; // Allow wrapping on smaller screens
+    max-width: 1200px; // Max width similar to your main content
+    margin: 0 auto; // Center content
+    gap: 30px; // Space between sections
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .footer-section {
+    flex: 1; // Allow sections to grow
+    min-width: 250px; // Minimum width for sections
+    margin-bottom: 20px; // Spacing for stacked sections on mobile
+
+    &.footer-brand {
+      min-width: 300px; // Brand section can be wider
+      @media (max-width: 768px) {
+        min-width: unset; // Reset for mobile centering
+      }
+    }
+  }
+
+  .footer-logo-link {
+    display: inline-block; // For margin/padding
+    margin-bottom: 15px; // Space below logo
+  }
+
+  .footer-logo {
+    height: 45px; // Adjust based on your logo's actual size
+    width: auto;
+  }
+
+  .footer-tagline {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8); // Slightly transparent white
+    line-height: 1.5;
+    max-width: 300px; // Keep tagline concise
+    @media (max-width: 768px) {
+      max-width: unset; // Remove max-width on mobile to center
+    }
+  }
+
+  .footer-heading {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff; // White heading
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-link {
+    color: #fff; // White links
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 10px; // Space between links
+    display: block; // Make links block-level for margin
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #2b2b2b; // Darker hover color, matching navbar
+    }
+  }
+
+  .footer-contact {
+    p {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    a {
+      display: inline; // Keep email/phone links inline
+      &:hover {
+        text-decoration: underline; // Underline on hover for context
+      }
+    }
+  }
+
+  .social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px; // Space between social icons
+
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+
+    .social-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(
+        255,
+        255,
+        255,
+        0.15
+      ); // Light transparent background
+      color: #fff;
+      border-radius: 50%; // Circular icons
+      font-size: 18px;
+      text-decoration: none;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.3); // More opaque on hover
+        transform: translateY(-3px); // Subtle lift
+      }
+    }
+  }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2); // Subtle top border
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+
+    .footer-legal-links {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px; // Space between legal links
+
+      .footer-link {
+        display: inline; // Keep legal links inline
+        font-size: 14px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  // Media queries for responsiveness
+  @media (max-width: 480px) {
+    padding: 2rem 1rem; // Less padding on very small screens
+    .footer-heading {
+      font-size: 18px;
+    }
+    .footer-link,
+    .footer-contact p {
+      font-size: 15px;
+    }
+  }
+}
