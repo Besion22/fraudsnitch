@@ -77,7 +77,7 @@ const CustomTooltip = ({
   return null;
 };
 
-export function FraudDashboard({ fraudData }: FraudDataProps) {
+export default function FraudDashboard({ fraudData }: FraudDataProps) {
   if (!fraudData || fraudData.length === 0) {
     return (
       <div className="fraud-dashboard no-data">

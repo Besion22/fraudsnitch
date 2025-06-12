@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { lazy, useState } from "react";
 import { initialFraudData } from "../../data/fraudData";
 import "../../assets/styles/fraudsswitcher.less";
-import { FraudDashboard } from "./FraudDashboard";
-import { ReportedFraudTable } from "./ReportedFraudTable";
+// import { FraudDashboard } from "./FraudDashboard";
+// import { ReportedFraudTable } from "./ReportedFraudTable";
 
+const ReportedFraudTable = lazy(() => import("./ReportedFraudTable"));
+const FraudDashboard = lazy(() => import("./FraudDashboard"));
 const TableIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

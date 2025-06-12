@@ -5,7 +5,9 @@ interface ReportedFraudTableProps {
   fraudData: FraudReport[];
 }
 
-export function ReportedFraudTable({ fraudData }: ReportedFraudTableProps) {
+export default function ReportedFraudTable({
+  fraudData,
+}: ReportedFraudTableProps) {
   return (
     <div className="reported-fraud-section">
       <div className="fraud-table-wrapper">
