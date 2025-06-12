@@ -1,4 +1,5 @@
 import type { FraudReport } from "../../data/fraudData";
+import "../../assets/styles/reportedfraudtable.less";
 
 interface ReportedFraudTableProps {
   fraudData: FraudReport[];

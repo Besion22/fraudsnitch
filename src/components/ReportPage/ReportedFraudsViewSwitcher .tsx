@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { initialFraudData } from "../../data/fraudData";
-import "../../assets/styles/reportedfrauds.less";
+import "../../assets/styles/fraudsswitcher.less";
 import { FraudDashboard } from "./FraudDashboard";
 import { ReportedFraudTable } from "./ReportedFraudTable";
 

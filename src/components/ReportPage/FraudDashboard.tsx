@@ -1,4 +1,5 @@
 import type { FraudDataProps, FraudReport } from "../../data/fraudData";
+import "../../assets/styles/frauddashboard.less";
 
 import {
   BarChart,
