@@ -53,6 +53,22 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <Link
+                to="/watchtower"
+                className="footer-link"
+              >
+                Watchtower
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact"
+                className="footer-link"
+              >
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="/report"
                 className="footer-link"
               >

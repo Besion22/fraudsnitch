@@ -1,9 +1,9 @@
-import ReportedFraudsTable from "../components/ReportPage/ReportedFraudsViewSwitcher ";
+import ReportedFraudsViewSwitcher from "../components/WatchTower/ReportedFraudsViewSwitcher ";
 
 const Watchtower = () => {
   return (
     <>
-      <ReportedFraudsTable />
+      <ReportedFraudsViewSwitcher />
     </>
   );
 };
