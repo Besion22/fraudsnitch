@@ -61,13 +61,6 @@ const Navbar = () => {
           Watchtower
         </NavLink>
         <NavLink
-          to="/contact"
-          className={({ isActive }) => `link ${isActive ? "active" : ""}`}
-          onClick={() => setMenuOpen(false)}
-        >
-          Contact
-        </NavLink>
-        <NavLink
           to="/report"
           className={({ isActive }) => `link ${isActive ? "active" : ""}`}
           onClick={() => setMenuOpen(false)}

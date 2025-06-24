@@ -61,14 +61,6 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <Link
-                to="/contact"
-                className="footer-link"
-              >
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link
                 to="/report"
                 className="footer-link"
               >
@@ -82,17 +74,7 @@ const Footer: React.FC = () => {
               >
                 About Us
               </Link>
-            </li>{" "}
-            {/* Add an About Us page if you plan one */}
-            <li>
-              <Link
-                to="/contact"
-                className="footer-link"
-              >
-                Contact
-              </Link>
-            </li>{" "}
-            {/* Add a Contact page if you plan one */}
+            </li>
           </ul>
         </div>
 

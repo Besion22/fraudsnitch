@@ -104,20 +104,6 @@ const EducationPage: React.FC = () => {
             </div>
           ))}
         </div>
-
-        <div className="call-to-action">
-          <h3>Can't find what you're looking for?</h3>
-          <p>
-            We're constantly updating our resources. If you have a specific
-            concern or question, don't hesitate to reach out.
-          </p>
-          <Link
-            to="/contact"
-            className="contact-link"
-          >
-            Contact Us
-          </Link>
-        </div>
       </div>
     </section>
   );
