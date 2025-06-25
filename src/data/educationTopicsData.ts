@@ -1,7 +1,4 @@
-// src/data/educationTopicsData.ts
 
-// --- IMPORT YOUR IMAGES HERE ---
-// Ensure these paths correctly point to your image files
 import phishingImage from "../assets/images/dataimages/phishing.jpg";
 import identityTheftImage from "../assets/images/dataimages/Identitytheft.jpg";
 import creditcardfraud from "../assets/images/dataimages/Creditcardfraud.png";
@@ -11,12 +8,11 @@ import onlineshoppingscam from "../assets/images/dataimages/Onlineshoppingscams.
 import romancescams from "../assets/images/dataimages/Romancescams.jpeg";
 import techsupportscams from "../assets/images/dataimages/Techsupportscams.webp";
 
-// Add imports for any other images you might have
 
 interface TopicContent {
   title: string;
   fullDescription: string;
-  imageUrl: string; // This will now hold the imported URL
+  imageUrl: string; 
   keyTakeaways: string[];
   whatToLookFor?: string[];
   howToProtect?: string[];
@@ -28,7 +24,7 @@ export const educationTopicsData: { [key: string]: TopicContent } = {
     title: "Phishing Scams: Deep Dive",
     fullDescription:
       "Phishing is a deceptive cybercrime where attackers impersonate trustworthy entities to trick individuals into revealing sensitive information, such as login credentials, credit card numbers, or other personal data. These scams often come through email, text messages (smishing), or phone calls (vishing). The goal is to steal your information for financial gain or identity theft.",
-    imageUrl: phishingImage, // Use the imported image variable
+    imageUrl: phishingImage, 
     keyTakeaways: [
       "Always verify sender identity.",
       "Never click suspicious links or attachments.",
@@ -59,7 +55,7 @@ export const educationTopicsData: { [key: string]: TopicContent } = {
     title: "Identity Theft: Deep Dive",
     fullDescription:
       "Identity theft occurs when someone uses your personal identifying information, such as your name, Social Security number, date of birth, or credit card details, without their permission, to commit fraud or other crimes. This can lead to significant financial and personal distress.",
-    imageUrl: identityTheftImage, // Use the imported image variable
+    imageUrl: identityTheftImage, 
     keyTakeaways: [
       "Regularly monitor financial statements and credit reports.",
       "Shred sensitive documents before discarding.",
@@ -93,7 +89,7 @@ export const educationTopicsData: { [key: string]: TopicContent } = {
     title: "Investment Fraud: Deep Dive",
     fullDescription:
       "Investment fraud involves deceptive practices that entice investors to make purchases or sales on the basis of false information, often promising high returns with little to no risk. These schemes can be complex and are designed to steal your money.",
-    imageUrl: investmentfraud, // Use the imported image variable
+    imageUrl: investmentfraud, 
     keyTakeaways: [
       "Beware of guaranteed high returns with no risk.",
       "Always research and verify investment opportunities.",
@@ -126,7 +122,7 @@ export const educationTopicsData: { [key: string]: TopicContent } = {
     title: "Malware & Ransomware: Deep Dive",
     fullDescription:
       "Malware (malicious software) is a broad term for any software designed to harm or exploit a computer system. Ransomware is a specific type of malware that encrypts your files or locks your system and demands a ransom (usually in cryptocurrency) for their release.",
-    imageUrl: malwareandransomware, // Use the imported image variable
+    imageUrl: malwareandransomware, 
     keyTakeaways: [
       "Keep all software updated, especially antivirus.",
       "Back up your data regularly to external storage.",
@@ -160,7 +156,7 @@ export const educationTopicsData: { [key: string]: TopicContent } = {
     title: "Credit Card Fraud: Deep Dive",
     fullDescription:
       "Credit card fraud involves the unauthorized use of your credit card or credit card information to make purchases or transactions. This can happen through various methods, both online and offline.",
-    imageUrl: creditcardfraud, // Use the imported image variable
+    imageUrl: creditcardfraud,
     keyTakeaways: [
       "Monitor statements and transaction alerts diligently.",
       "Only shop on secure websites with HTTPS.",
@@ -193,7 +189,7 @@ export const educationTopicsData: { [key: string]: TopicContent } = {
     title: "Online Shopping Scams: Deep Dive",
     fullDescription:
       "Online shopping scams trick consumers into paying for goods or services that are never delivered, are significantly misrepresented, or are counterfeit. These scams often leverage fake websites, social media ads, or enticingly low prices.",
-    imageUrl: onlineshoppingscam, // Use the imported image variable
+    imageUrl: onlineshoppingscam, 
     keyTakeaways: [
       "Verify seller and website legitimacy.",
       "Use secure payment methods with buyer protection.",
@@ -226,7 +222,7 @@ export const educationTopicsData: { [key: string]: TopicContent } = {
     title: "Romance Scams: Deep Dive",
     fullDescription:
       "Romance scams, also known as 'catfishing,' involve fraudsters creating fake online identities to gain a victim's affection and trust. Once an emotional connection is established, the scammer manipulates the victim into sending money, gifts, or personal information.",
-    imageUrl: romancescams, // Use the imported image variable
+    imageUrl: romancescams, 
     keyTakeaways: [
       "Be wary of quick professions of love online.",
       "Never send money or personal info to someone you haven't met.",
@@ -259,7 +255,7 @@ export const educationTopicsData: { [key: string]: TopicContent } = {
     title: "Tech Support Scams: Deep Dive",
     fullDescription:
       "Tech support scams involves fraudsters impersonating legitimate technical support representatives to trick victims into paying for unnecessary 'services' to fix non-existent computer problems, or to gain remote access to their devices to steal information.",
-    imageUrl: techsupportscams, // Use the imported image variable
+    imageUrl: techsupportscams,
     keyTakeaways: [
       "Legitimate tech support won't call you unsolicited.",
       "Never grant remote access or pay with gift cards.",

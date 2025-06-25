@@ -1,8 +1,7 @@
-// src/components/Footer/Footer.tsx
 import React from "react";
 import { Link } from "react-router-dom";
 import "../assets/styles/footer.less";
-import logo from "../assets/images/logo/fraudsnitchlogo.svg"; // Your logo
+import logo from "../assets/images/logo/fraudsnitchlogo.svg"; 
 
 const Footer: React.FC = () => {
   return (
@@ -99,7 +98,6 @@ const Footer: React.FC = () => {
             </a>
           </p>
           <div className="social-links">
-            {/* Replace with actual social media icons/links if you have them */}
             <a
               href="https://facebook.com"
               target="_blank"

@@ -1,8 +1,6 @@
 import { lazy, useState } from "react";
 import { initialFraudData } from "../../data/fraudData";
 import "../../assets/styles/fraudsswitcher.less";
-// import { FraudDashboard } from "./FraudDashboard";
-// import { ReportedFraudTable } from "./ReportedFraudTable";
 
 const ReportedFraudTable = lazy(() => import("./ReportedFraudTable"));
 const FraudDashboard = lazy(() => import("./FraudDashboard"));

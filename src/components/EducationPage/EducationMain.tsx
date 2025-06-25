@@ -94,7 +94,6 @@ const EducationPage: React.FC = () => {
               <div className="card-icon">{topic.icon}</div>
               <h2 className="card-title">{topic.title}</h2>
               <p className="card-description">{topic.description}</p>
-              {/* The 'Link' component uses the 'link' property from  topic data */}
               <Link
                 to={topic.link}
                 className="card-link"

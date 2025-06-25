@@ -1,13 +1,10 @@
-// --- REFINED COLOR PALETTE ---
-@primary-color: rgb(110, 120, 210); // A softer, more modern blue
-@form-background: #12121e; // Deep navy/charcoal background
-
-// Cool-toned grays for better blending
-@surface-color: #1c1c2e; // For input backgrounds (a shade lighter than the main bg)
-@border-color: #404060; // A muted, cool-toned border
-@text-light: #e1e1f5; // Main text - a very light lavender-gray
-@text-medium: #9fa8da; // For icons and important labels
-@text-subtle: #8080a0; // For placeholders and optional text
+@primary-color: rgb(110, 120, 210);
+@form-background: #12121e;
+@surface-color: #1c1c2e;
+@border-color: #404060;
+@text-light: #e1e1f5;
+@text-medium: #9fa8da;
+@text-subtle: #8080a0;
 
 .formContainer {
   max-width: 800px;
@@ -50,7 +47,7 @@
       }
       p {
         margin-bottom: 0;
-        color: @text-subtle; // Use new subtle text color
+        color: @text-subtle;
         font-size: 1.1rem;
       }
     }
@@ -58,7 +55,7 @@
 
   .formSection {
     margin-bottom: 2rem;
-    border-bottom: 1px solid @surface-color; // Use new surface color for a subtle border
+    border-bottom: 1px solid @surface-color;
     padding-bottom: 2rem;
 
     &:last-of-type {
@@ -82,7 +79,7 @@
       .section-icon {
         width: 24px;
         height: 24px;
-        fill: @text-medium; // Use medium text color for icons
+        fill: @text-medium;
       }
     }
   }
@@ -92,13 +89,13 @@
 
     label {
       display: block;
-      color: @text-medium; // Use medium text color for labels
+      color: @text-medium;
       font-weight: 600;
       margin-bottom: 0.5rem;
 
       .optional {
         font-weight: 400;
-        color: @text-subtle; // Use subtle text color
+        color: @text-subtle;
       }
     }
 
@@ -107,12 +104,12 @@
     textarea {
       width: 100%;
       padding: 12px;
-      border: 1px solid @border-color; // Use new border color
+      border: 1px solid @border-color;
       border-radius: 6px;
       font-size: 1rem;
       font-family: inherit;
-      background-color: @surface-color; // Use new surface color
-      color: @text-light; // Use new light text color
+      background-color: @surface-color;
+      color: @text-light;
       box-sizing: border-box;
       transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
 
@@ -150,7 +147,7 @@
     .upload-icon {
       width: 40px;
       height: 40px;
-      fill: @text-subtle; // Use new subtle text color
+      fill: @text-subtle;
       margin-bottom: 1rem;
       transition: fill 0.3s;
     }

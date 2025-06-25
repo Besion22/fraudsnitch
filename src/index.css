@@ -6,13 +6,9 @@
 
 body {
   background-color: #161513;
-  /* --- New background styles start --- */
-  background-image:
-    /* This is the embedded vertical binary code pattern */
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='150' viewBox='0 0 60 150'%3E%3Cdefs%3E%3Cstyle%3E.text { font-family: monospace; font-size: 14px; fill: rgba(88, 96, 189, 0.15); }%3C/style%3E%3C/defs%3E%3Ctext class='text' x='0' y='15'%3E0110%3C/text%3E%3Ctext class='text' x='0' y='35'%3E1001%3C/text%3E%3Ctext class='text' x='0' y='55'%3E0101%3C/text%3E%3Ctext class='text' x='0' y='75'%3E1110%3C/text%3E%3Ctext class='text' x='0' y='95'%3E0001%3C/text%3E%3Ctext class='text' x='0' y='115'%3E1010%3C/text%3E%3Ctext class='text' x='0' y='135'%3E0111%3C/text%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='150' viewBox='0 0 60 150'%3E%3Cdefs%3E%3Cstyle%3E.text { font-family: monospace; font-size: 14px; fill: rgba(88, 96, 189, 0.15); }%3C/style%3E%3C/defs%3E%3Ctext class='text' x='0' y='15'%3E0110%3C/text%3E%3Ctext class='text' x='0' y='35'%3E1001%3C/text%3E%3Ctext class='text' x='0' y='55'%3E0101%3C/text%3E%3Ctext class='text' x='0' y='75'%3E1110%3C/text%3E%3Ctext class='text' x='0' y='95'%3E0001%3C/text%3E%3Ctext class='text' x='0' y='115'%3E1010%3C/text%3E%3Ctext class='text' x='0' y='135'%3E0111%3C/text%3E%3C/svg%3E");
   background-attachment: fixed;
-  animation: pan-background 60s linear infinite; /* Animates the background slowly */
-  /* --- New background styles end --- */
+  animation: pan-background 60s linear infinite;
   margin: 0;
   padding-top: 2%;
   padding-left: 15%;
@@ -23,7 +19,6 @@ body {
   line-height: 1.6;
 }
 
-/* Optional animation to make the 'rain' slowly move */
 @keyframes pan-background {
   from {
     background-position: 0 0;
